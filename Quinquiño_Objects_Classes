@@ -1,0 +1,26 @@
+import os
+import math
+
+class round:
+        def __init__(self, rad):
+            self.rad= rad
+    
+        def area(self):
+            Round_area = math.pi * self.rad ** 2
+            print(f"\nArea = {Round_area:.2f}")
+        
+        def parimeter(self):
+            Round_area = 2 * math.pi * self.rad
+            print(f"Parimeter = {Round_area:.2f}")
+            
+
+R = float(input("[0] = End the Program \nEnter Radius: "))
+    
+if R == float(0):
+       exit()
+
+round = round(R)
+        
+
+round.area()
+round.parimeter()
